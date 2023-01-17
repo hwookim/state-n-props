@@ -4,16 +4,43 @@ import './Color.scss';
 const Color = () => {
   const [color, setColor] = useState('black');
 
-  const handleClick = () => {
+  const handleClickRed = () => {
     setColor('red');
   };
 
+  const handleClickOrange = () => {
+    setColor('orange');
+  };
+
+  const handleClickYellow = () => {
+    setColor('yellow');
+  };
+
+  const handleClickGreen = () => {
+    setColor('green');
+  };
+
+  const handleClickBlue = () => {
+    setColor('blue');
+  };
+
+  const handleClickPurple = () => {
+    setColor('purple');
+  };
+
   return (
-    <div className="color-container">
-      <div className={color === 'black' ? 'black' : 'red'}>
-        색상이 바뀔거예요
+    <div className="colorContainer">
+      <div className={'colorBox ' + color}>
+        <span className="colorName">{color}</span>
       </div>
-      <button onClick={handleClick}>Click!</button>
+      <div className="info">
+        <button onClick={handleClickRed}>RED</button>
+        <button onClick={handleClickOrange}>ORANGE</button>
+        <button onClick={handleClickYellow}>YELLOW</button>
+        <button onClick={handleClickGreen}>GREEN</button>
+        <button onClick={handleClickBlue}>BLUE</button>
+        <button onClick={handleClickPurple}>PURPLE</button>
+      </div>
     </div>
   );
 };
