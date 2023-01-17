@@ -5,15 +5,17 @@ import './Main.scss';
 
 const Main = () => {
   const [count, setCount] = useState(0);
-  const isOver5 = count > 5;
+  const isUnder5 = count <= 5;
+
+  const handleCount = value => {
+    setCount(value);
+  };
 
   return (
-    <>
-      <Toggle>
-        <Counter value={count} onChange={setCount} />
-        <div className="result">{isOver5 ? '😊' : '😢'}</div>
-      </Toggle>
-    </>
+    <div className="mainContainer">
+      <Counter value={count} onChange={handleCount} />
+      <Toggle contents={isUnder5 ? '😢' : '😊'} />
+    </div>
   );
 };
 

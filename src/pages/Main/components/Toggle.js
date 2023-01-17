@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Toggle = props => {
-  const { children } = props;
+  const { contents } = props;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -16,7 +16,7 @@ const Toggle = props => {
         </div>
         숨기고 싶은 내용이 있어요 👀
       </div>
-      {isOpen && <div className="toggleContents">{children}</div>}
+      {isOpen && <div className="toggleContents">{contents}</div>}
     </div>
   );
 };
