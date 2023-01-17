@@ -1,6 +1,4 @@
 .toggleContainer {
-  padding: 10px;
-
   .toggleText {
     display: flex;
     align-items: center;
@@ -11,8 +9,8 @@
     margin-right: 4px;
     margin-bottom: 2px;
     padding: 4px;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     border-radius: 8px;
     cursor: pointer;
     &:hover {
