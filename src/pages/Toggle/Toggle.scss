@@ -1,0 +1,28 @@
+.toggleContainer {
+  padding: 10px;
+
+  .toggleText {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .toggleButton {
+    margin-right: 4px;
+    margin-bottom: 2px;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+
+  .toggleContents {
+    padding: 12px;
+    font-size: 42px;
+    font-weight: bold;
+  }
+}
