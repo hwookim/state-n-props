@@ -7,16 +7,10 @@ const Main = () => {
   const [count, setCount] = useState(0);
   const isOver5 = count > 5;
 
-  const handleCounter = value => {
-    const result = count + value;
-    if (result < 0) return;
-    setCount(result);
-  };
-
   return (
     <>
       <Toggle>
-        <Counter value={count} onChange={handleCounter} />
+        <Counter value={count} onChange={setCount} />
         <div className="result">{isOver5 ? '😊' : '😢'}</div>
       </Toggle>
     </>

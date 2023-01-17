@@ -4,7 +4,9 @@ const Counter = props => {
   const { value, onChange } = props;
 
   const handleCounter = change => () => {
-    onChange(change);
+    const result = value + change;
+    if (result < 0) return;
+    onChange(result);
   };
 
   return (
