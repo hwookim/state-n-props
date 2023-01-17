@@ -1,20 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Counter.scss';
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  const handleCounter = value => () => {
-    const result = count + value;
-    if (result < 0) return;
-    setCount(result);
-  };
-
   return (
     <div className="counterContainer">
-      <button onClick={handleCounter(-1)}>-</button>
-      <div className="counterText">{count}</div>
-      <button onClick={handleCounter(+1)}>+</button>
+      <button>-</button>
+      <div className="counterText">0</div>
+      <button>+</button>
     </div>
   );
 };

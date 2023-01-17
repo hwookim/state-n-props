@@ -1,22 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Toggle = props => {
-  const { contents } = props;
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(prev => !prev);
-  };
-
   return (
     <div className="toggleContainer">
       <div className="toggleText">
-        <div className="toggleButton" onClick={toggle}>
-          {isOpen ? '▼' : '▶'}
-        </div>
+        <div className="toggleButton">▼</div>
         숨기고 싶은 내용이 있어요 👀
       </div>
-      {isOpen && <div className="toggleContents">{contents}</div>}
+      <div className="toggleContents">contents</div>
     </div>
   );
 };

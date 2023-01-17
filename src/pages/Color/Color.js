@@ -1,21 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Color.scss';
 
 const Color = () => {
-  const [color, setColor] = useState('black');
+  const handleClickGreen = () => {};
 
-  const handleClickGreen = () => {
-    setColor('green');
-  };
-
-  const handleClickPurple = () => {
-    setColor('purple');
-  };
+  const handleClickPurple = () => {};
 
   return (
     <div className="colorContainer">
-      <div className={'colorBox ' + color}>
-        <span className="colorName">{color}</span>
+      <div className="colorBox">
+        <span className="colorName">색상</span>
       </div>
       <div className="info">
         <button onClick={handleClickGreen}>GREEN</button>

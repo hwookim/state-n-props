@@ -5,16 +5,13 @@ import './Main.scss';
 
 const Main = () => {
   const [count, setCount] = useState(0);
-  const isUnder5 = count <= 5;
 
-  const handleCount = value => {
-    setCount(value);
-  };
+  const handleCount = value => {};
 
   return (
     <div className="mainContainer">
       <Counter value={count} onChange={handleCount} />
-      <Toggle contents={isUnder5 ? '😢' : '😊'} />
+      <Toggle contents="😢" />
     </div>
   );
 };
