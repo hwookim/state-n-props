@@ -12,7 +12,7 @@ const Main = () => {
   };
 
   return (
-    <div className="mainContainer">
+    <div className="main">
       <Counter value={count} onChange={handleCount} />
       <Toggle contents={isUnder5 ? '😢' : '😊'} />
     </div>
