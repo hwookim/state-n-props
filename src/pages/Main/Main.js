@@ -9,7 +9,7 @@ const Main = () => {
   const handleCount = value => {};
 
   return (
-    <div className="mainContainer">
+    <div className="main">
       <Counter value={count} onChange={handleCount} />
       <Toggle contents="😢" />
     </div>
