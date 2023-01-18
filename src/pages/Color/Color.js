@@ -13,11 +13,11 @@ const Color = () => {
   };
 
   return (
-    <div className="colorContainer">
+    <div className="color">
       <div className={'colorBox ' + color}>
         <span className="colorName">{color}</span>
       </div>
-      <div className="info">
+      <div className="colorButtons">
         <button onClick={handleClickGreen}>GREEN</button>
         <button onClick={handleClickPurple}>PURPLE</button>
       </div>

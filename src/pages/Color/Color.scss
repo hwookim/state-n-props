@@ -1,11 +1,11 @@
-.colorContainer {
+.color {
   position: relative;
   padding: 30px;
   width: fit-content;
   background-color: #eaeef1;
   border-radius: 20px;
 
-  .colorBox {
+  &Box {
     position: relative;
     width: 500px;
     height: 500px;
@@ -34,7 +34,7 @@
     }
   }
 
-  .info {
+  &Buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;

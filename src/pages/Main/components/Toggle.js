@@ -9,7 +9,7 @@ const Toggle = props => {
   };
 
   return (
-    <div className="toggleContainer">
+    <div className="toggle">
       <div className="toggleText">
         <div className="toggleButton" onClick={toggle}>
           {isOpen ? '▼' : '▶'}
