@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/state-n-props/static/css/main.cda3d793.css",
-    "main.js": "/state-n-props/static/js/main.6204825b.js",
+    "main.js": "/state-n-props/static/js/main.7060ebd2.js",
     "index.html": "/state-n-props/index.html",
     "main.cda3d793.css.map": "/state-n-props/static/css/main.cda3d793.css.map",
-    "main.6204825b.js.map": "/state-n-props/static/js/main.6204825b.js.map"
+    "main.7060ebd2.js.map": "/state-n-props/static/js/main.7060ebd2.js.map"
   },
   "entrypoints": [
     "static/css/main.cda3d793.css",
-    "static/js/main.6204825b.js"
+    "static/js/main.7060ebd2.js"
   ]
 }
