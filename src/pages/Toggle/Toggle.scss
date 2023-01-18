@@ -1,11 +1,11 @@
-.toggleContainer {
-  .toggleText {
+.toggle {
+  &Text {
     display: flex;
     align-items: center;
     font-size: 24px;
   }
 
-  .toggleButton {
+  &Button {
     margin-right: 4px;
     margin-bottom: 2px;
     padding: 4px;
@@ -18,7 +18,7 @@
     }
   }
 
-  .toggleContents {
+  &Contents {
     padding: 12px;
   }
 }

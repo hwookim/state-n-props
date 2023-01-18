@@ -1,4 +1,4 @@
-.counterContainer {
+.counter {
   display: flex;
   gap: 8px;
   padding: 8px;
@@ -14,7 +14,7 @@
     cursor: pointer;
   }
 
-  .counterText {
+  &Text {
     width: 40px;
     text-align: center;
     border: solid black;

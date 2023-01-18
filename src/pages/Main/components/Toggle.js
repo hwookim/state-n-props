@@ -2,7 +2,7 @@ import React from 'react';
 
 const Toggle = props => {
   return (
-    <div className="toggleContainer">
+    <div className="toggle">
       <div className="toggleText">
         <div className="toggleButton">▼</div>
         숨기고 싶은 내용이 있어요 👀

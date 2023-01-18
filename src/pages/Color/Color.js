@@ -7,11 +7,11 @@ const Color = () => {
   const handleClickPurple = () => {};
 
   return (
-    <div className="colorContainer">
+    <div className="color">
       <div className="colorBox">
         <span className="colorName">색상</span>
       </div>
-      <div className="info">
+      <div className="colorButtons">
         <button onClick={handleClickGreen}>GREEN</button>
         <button onClick={handleClickPurple}>PURPLE</button>
       </div>
