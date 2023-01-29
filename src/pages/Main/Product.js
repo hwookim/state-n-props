@@ -44,7 +44,11 @@ const Product = () => {
           </div>
           <div className="quantity">
             <span> 수량 : </span>
-            <Count onChange={handleQuantity} onReset={resetQuantity} />
+            <Count
+              defaultValue={1}
+              onChange={handleQuantity}
+              onReset={resetQuantity}
+            />
           </div>
           <span>최종 가격 : {totalPrice.toLocaleString()} 원</span>
           <button className="buyBtn">구매하기</button>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Count.scss';
 
 const Count = props => {
-  const { defaultValue, onChange, onReset } = props;
+  const { defaultValue = 1, onChange, onReset } = props;
 
   const [count, setCount] = useState(defaultValue);
 
