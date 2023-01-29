@@ -26,7 +26,7 @@ const Review = props => {
           </div>
         )}
         <span className="reviewMainHandler" onClick={handleToggleReview}>
-          {isReviewOpen ? '접기' : '더보기'}
+          {isReviewOpen ? '접기 ▲' : '더보기 ▼'}
         </span>
       </div>
     </div>
