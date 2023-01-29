@@ -34,7 +34,7 @@ const Product = () => {
       <div className="productDetail">
         <img
           className="productDetailImg"
-          src={`./images/golf-ball-${color}.jpg`}
+          src={`${process.env.PUBLIC_URL}/images/golf-ball-${color}.jpg`}
           alt={`golf-ball-${color}`}
         />
         <div className="productDetailInfo">
