@@ -1,10 +1,10 @@
 .product {
   margin-top: 100px;
-  padding: 30px 80px;
 
   &Detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 24px 60px;
 
     &Img {
       width: 100%;
@@ -88,14 +88,69 @@
     }
   }
 
-  .review {
-    margin-top: 40px;
+  .reviewList {
+    border: 1px solid lightgray;
 
-    &Toggle {
-      margin-bottom: 10px;
-      font-size: 30px;
-      font-weight: 700;
-      cursor: pointer;
+    &Header {
+      display: flex;
+      align-items: center;
+      height: 80px;
+      padding: 24px 60px;
+      background-color: #f4f6f8;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .review {
+      padding: 24px 60px;
+      border-top: 1px solid lightgray;
+
+      &Title {
+        margin-bottom: 12px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 12px;
+
+        img {
+          width: 36px;
+          height: 36px;
+        }
+
+        &Info {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+
+          .name {
+            font-size: 14px;
+            font-weight: bold;
+          }
+
+          .itemName {
+            color: gray;
+            font-size: 12px;
+          }
+        }
+      }
+
+      &Main {
+        &Contents {
+          margin-bottom: 12px;
+          line-height: 150%;
+        }
+
+        &Handler {
+          color: gray;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
     }
   }
 }

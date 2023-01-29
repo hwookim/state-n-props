@@ -60,14 +60,33 @@ const Product = () => {
             </button>
           </div>
           <span>최종 가격 : {totalPrice.toLocaleString()} 원</span>
-          <button className="buyBtn">구해하기</button>
+          <button className="buyBtn">구매하기</button>
         </div>
       </div>
-      <div className="review">
-        <div className="reviewToggle" onClick={handleToggleReview}>
-          {isReviewOpen ? '▼' : '▶'} 리뷰 보기 Click!
+      <div className="reviewList">
+        <div className="reviewListHeader">상품평</div>
+        <div className="review">
+          <div className="user">
+            <img src={`${process.env.PUBLIC_URL}/images/avatar.jpg`} />
+            <div className="userInfo">
+              <div className="name">위코드</div>
+              <div className="itemName">골프공, white 색상 구매</div>
+            </div>
+          </div>
+          <div className="reviewTitle">배송도 빠르고 정말 좋아요.</div>
+          <div className="reviewMain">
+            {isReviewOpen && (
+              <div className="reviewMainContents">
+                주문한지 하루만에 배송이 도착해서 너무 좋았습니다.
+                <br />
+                다음에도 필요하면 또 여기서 시킬 것 같아요.
+              </div>
+            )}
+            <span className="reviewMainHandler" onClick={handleToggleReview}>
+              {isReviewOpen ? '접기' : '더보기'}
+            </span>
+          </div>
         </div>
-        {isReviewOpen && <div>공이 참 예뻐요~~~~</div>}
       </div>
     </div>
   );
