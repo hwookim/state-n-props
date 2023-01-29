@@ -1,0 +1,42 @@
+.nav {
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  padding: 30px;
+
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+
+  .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 30px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .searchInput {
+      width: 400px;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .loginBtn {
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        color: blueviolet;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
