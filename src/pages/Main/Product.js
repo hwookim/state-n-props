@@ -41,9 +41,12 @@ const Product = () => {
           <span className="title">골프공</span>
           <span>가격 : {price.toLocaleString()} 원</span>
           <div className="color">
-            <ColorButton color="white" onClick={handleColor} />
-            <ColorButton color="red" onClick={handleColor} />
-            <ColorButton color="yellow" onClick={handleColor} />
+            <span>색상 : {color} </span>
+            <div className="colorHandler">
+              <ColorButton color="white" onClick={handleColor} />
+              <ColorButton color="red" onClick={handleColor} />
+              <ColorButton color="yellow" onClick={handleColor} />
+            </div>
           </div>
           <div className="quantity">
             <span> 수량 : </span>
