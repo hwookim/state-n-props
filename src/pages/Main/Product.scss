@@ -42,39 +42,6 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        height: 36px;
-
-        &Handler {
-          display: flex;
-          width: fit-content;
-          height: 100%;
-          padding: 8px;
-          border: 1px solid black;
-          border-radius: 8px;
-          gap: 8px;
-
-          button {
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-          }
-
-          &Text {
-            width: 40px;
-            border: solid black;
-            border-width: 0 1px;
-            text-align: center;
-          }
-        }
-
-        .resetBtn {
-          width: 48px;
-          height: 100%;
-          border: 1px solid black;
-          border-radius: 8px;
-          background-color: transparent;
-          cursor: pointer;
-        }
       }
 
       .buyBtn {
@@ -99,58 +66,6 @@
       background-color: #f4f6f8;
       font-size: 24px;
       font-weight: bold;
-    }
-
-    .review {
-      padding: 24px 60px;
-      border-top: 1px solid lightgray;
-
-      &Title {
-        margin-bottom: 12px;
-        font-size: 20px;
-        font-weight: bold;
-      }
-
-      .user {
-        display: flex;
-        align-items: center;
-        margin-bottom: 12px;
-        gap: 12px;
-
-        img {
-          width: 36px;
-          height: 36px;
-        }
-
-        &Info {
-          display: flex;
-          flex-direction: column;
-          gap: 4px;
-
-          .name {
-            font-size: 14px;
-            font-weight: bold;
-          }
-
-          .itemName {
-            color: gray;
-            font-size: 12px;
-          }
-        }
-      }
-
-      &Main {
-        &Contents {
-          margin-bottom: 12px;
-          line-height: 150%;
-        }
-
-        &Handler {
-          color: gray;
-          text-decoration: underline;
-          cursor: pointer;
-        }
-      }
     }
   }
 }
