@@ -10,7 +10,7 @@ const Nav = () => {
           Wecode
         </Link>
         <input className="searchInput" placeholder="검색" />
-        <Link className="loginBtn" to="/login">
+        <Link className="loginBtn" to="/">
           로그인
         </Link>
       </div>
