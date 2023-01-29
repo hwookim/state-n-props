@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Product.scss';
-import ColorButton from './components/ColorButton/ColorButton';
+import Color from './components/Color/Color';
 import Review from './components/Review/Review';
 import Count from './components/Count/Count';
 
@@ -34,14 +34,7 @@ const Product = () => {
         <div className="productDetailInfo">
           <span className="title">골프공</span>
           <span>가격 : {price.toLocaleString()} 원</span>
-          <div className="color">
-            <span>색상 : {color} </span>
-            <div className="colorHandler">
-              <ColorButton color="white" onClick={handleColor} />
-              <ColorButton color="red" onClick={handleColor} />
-              <ColorButton color="yellow" onClick={handleColor} />
-            </div>
-          </div>
+          <Color color="white" onClick={handleColor} />
           <div className="quantity">
             <span> 수량 : </span>
             <Count
