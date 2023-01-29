@@ -2,25 +2,30 @@ import React, { useState } from 'react';
 import './Count.scss';
 
 const Count = props => {
-  const { onChange, onReset } = props;
+  const { defaultValue, onChange, onReset } = props;
 
-  const [quantity, setQuantity] = useState(1);
+  const [count, setCount] = useState(defaultValue);
 
-  const handleQuantity = value => () => {
-    const result = quantity + value;
+  const handleCount = value => () => {
+    const result = count + value;
     if (result < 1) return;
-    setQuantity(result);
+    setCount(result);
     onChange(result);
+  };
+
+  const resetCount = () => {
+    setCount(defaultValue);
+    onReset();
   };
 
   return (
     <div className="count">
       <div className="countInput">
-        <button onClick={handleQuantity(-1)}>-</button>
-        <div className="countInputText">{quantity}</div>
-        <button onClick={handleQuantity(+1)}>+</button>
+        <button onClick={handleCount(-1)}>-</button>
+        <div className="countInputText">{count}</div>
+        <button onClick={handleCount(+1)}>+</button>
       </div>
-      <button className="resetBtn" onClick={onReset}>
+      <button className="resetBtn" onClick={resetCount}>
         reset
       </button>
     </div>
