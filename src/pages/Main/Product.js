@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Product.scss';
-import ColorButton from './ColorButton/ColorButton';
-import Review from './Review/Review';
-import Count from './Count/Count';
+import ColorButton from './components/ColorButton/ColorButton';
+import Review from './components/Review/Review';
+import Count from './components/Count/Count';
 
 const Product = () => {
   const [color, setColor] = useState('white');
