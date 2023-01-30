@@ -1,5 +1,3 @@
-@import '../../styles/common';
-
 .product {
   display: flex;
   flex-direction: column;
@@ -9,7 +7,7 @@
   &Detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: $main-witdh;
+    width: 1024px;
     padding: 24px 0;
 
     &Img {
@@ -64,17 +62,24 @@
   }
 
   .reviewList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    border: 1px solid lightgray;
+    border-top: 1px solid lightgray;
 
     &Header {
       display: flex;
       align-items: center;
+      justify-content: center;
+      width: 100%;
       height: 80px;
-      padding: 24px calc((100% - $main-witdh) / 2);
       background-color: #f4f6f8;
-      font-size: 24px;
-      font-weight: bold;
+      span {
+        width: 1024px;
+        font-size: 24px;
+        font-weight: bold;
+      }
     }
   }
 }

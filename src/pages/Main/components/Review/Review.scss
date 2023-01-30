@@ -1,8 +1,6 @@
-@import '../../../../styles/common';
-
 .review {
-  padding: 24px calc((100% - $main-witdh) / 2);
-  border-top: 1px solid lightgray;
+  width: 1024px;
+  margin: 12px 0;
 
   &Title {
     margin-bottom: 12px;

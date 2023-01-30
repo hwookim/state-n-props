@@ -48,7 +48,9 @@ const Product = () => {
         </div>
       </div>
       <div className="reviewList">
-        <div className="reviewListHeader">상품평</div>
+        <div className="reviewListHeader">
+          <span>상품평</span>
+        </div>
         <Review />
       </div>
     </div>
