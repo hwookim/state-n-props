@@ -3,6 +3,7 @@ import './Product.scss';
 import Color from './components/Color/Color';
 import Review from './components/Review/Review';
 import Count from './components/Count/Count';
+import ColorButton from './components/Color/ColorButton';
 
 const Product = () => {
   const [color, setColor] = useState('white');
@@ -26,11 +27,13 @@ const Product = () => {
   return (
     <div className="product">
       <div className="productDetail">
-        <img
-          className="productDetailImg"
-          src={`${process.env.PUBLIC_URL}/images/golf-ball-${color}.jpg`}
-          alt={`golf-ball-${color}`}
-        />
+        <div className="productDetailImg">
+          <img
+            src={`${process.env.PUBLIC_URL}/images/golf-ball-${color}.jpg`}
+            alt={`golf-ball-${color}`}
+          />
+          <ColorButton color={color} />
+        </div>
         <div className="productDetailInfo">
           <span className="title">골프공</span>
           <span>가격 : {price.toLocaleString()} 원</span>
