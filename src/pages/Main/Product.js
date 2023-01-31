@@ -29,7 +29,7 @@ const Product = () => {
       <div className="productDetail">
         <div className="productDetailImg">
           <img
-            src={`${process.env.PUBLIC_URL}/images/golf-ball-${color}.jpg`}
+            src={`/images/golf-ball-${color}.jpg`}
             alt={`golf-ball-${color}`}
           />
           <ColorButton color={color} />

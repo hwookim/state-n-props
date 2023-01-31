@@ -5,7 +5,7 @@ import Product from './pages/Main/Product';
 
 const Router = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Nav />
       <Routes>
         <Route path="/" element={<Product />} />

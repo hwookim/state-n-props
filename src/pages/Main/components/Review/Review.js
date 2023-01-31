@@ -10,7 +10,7 @@ const Review = props => {
   return (
     <div className="review">
       <div className="user">
-        <img src={`${process.env.PUBLIC_URL}/images/avatar.jpg`} />
+        <img src="/images/avatar.jpg" alt="avatar" />
         <div className="userInfo">
           <div className="name">위코드</div>
           <div className="itemName">골프공, white 색상 구매</div>
